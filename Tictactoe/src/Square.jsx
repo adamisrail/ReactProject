@@ -1,9 +1,14 @@
 
+
+
+
 export default function Square({value, onClick}){
     
-    return(
+    return (
   
-        <button className='square' onClick={onClick}>{value}</button>
+      <button className='square' onClick={onClick}>{value}</button>
+      
+
   )
     }
 
