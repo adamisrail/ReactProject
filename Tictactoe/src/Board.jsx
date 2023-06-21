@@ -5,10 +5,10 @@ import { ReactDOM } from 'react';
 import  Square  from './Square';
 
 
-export default function Board() {
+export default function Board({isXturn, isClicked, onPlay}) {
   
-  let [isClicked, setIsClicked] = useState(Array(9).fill(null));
-  let [isXturn, setIsXTurn] = useState(true);
+  // let [isClicked, setIsClicked] = useState(Array(9).fill(null));
+  // let [isXturn, setIsXTurn] = useState(true);
 
   
   function handleClick(i){
@@ -50,8 +50,8 @@ export default function Board() {
       };
 
     
-      setIsClicked(nextarray)
-      setIsXTurn(!isXturn)
+      onPlay(nextarray)
+      
    
    }
 
