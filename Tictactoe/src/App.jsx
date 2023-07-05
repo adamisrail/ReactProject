@@ -31,6 +31,7 @@ function App() {
       setCurrentMove(jumpLoc);
 
       setIsXTurn(jumpLoc % 2 === 0);
+      // Hello
   }
 
   const moves = history.map((squareValue, move) => {
